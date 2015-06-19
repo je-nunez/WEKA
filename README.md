@@ -48,3 +48,9 @@ A few classes naturally need to load slowler because all the drivers they need, 
 
      weka.core.converters.DatabaseLoader
 
+# Other
+
+WEKA can also be used naturally as a library from Java, avoiding to fork an external process. E.g., this is the documentation for the `J48` decision tree invoked above:
+
+     http://weka.sourceforge.net/doc.dev/weka/classifiers/trees/J48.html
+
