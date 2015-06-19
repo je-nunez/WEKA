@@ -15,14 +15,14 @@ A book about WEKA is available from the authors of this system:
 
 # Description of this script
 
-It is possible to call several WEKA classes not from its graphical interface, but to call them in batch (either in the command-line or controlled by another program). E.g., to call the decision tree J48 (similar to Ross Quinlan's C4.5 decision tree) with a confidence leve of 0.5 (if the enthropy of our input data allowed this confidence level):
+It is possible to call several WEKA classes not from its graphical interface, but to call them in batch (either in the command-line or controlled by another program). E.g., to call the decision tree `J48` (similar to Ross Quinlan's `C4.5` decision tree) with a `confidence level` of 0.5 (if the enthropy of our input data allowed this confidence level):
 
      set CLASSPATH=%CLASSPATH%;C:\WEKA\weka.jar
-     java weka.filters.unsupervised.attribute.Remove -i source_file.arff  -R 2,5,6   > temp_file.arff
+     java weka.filters.unsupervised.attribute.Remove -i source_file.arff  -R 2,5,6 > temp_file.arff
      java weka.classifiers.trees.J48 -t temp_file.arff  -c 4 -C 0.5 > resulting_report.txt
      del temp_file.arff
 
-but in this case it is necessary to know what are the command-line options of each WEKA class.
+(it is possible also to call WEKA through `popen()` or other calls), but in all cases it is necessary to know what are the available WEKA classes to be called from the command-line and their options.
 
 The current script is for knowing all the classes that WEKA offers and the command-line options and arguments to call each of them. The script in this repository is designed for Linux/Mac OS-X/Unix.
 
