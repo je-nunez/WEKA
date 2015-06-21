@@ -54,5 +54,5 @@ WEKA can also be used naturally as a library from Java, avoiding to fork an exte
 
      http://weka.sourceforge.net/doc.dev/weka/classifiers/trees/J48.html
 
-There is a simple example in this repository of a WEKA J48 decision tree in Scala (file `weka_j48_decision_tree.scala`).
+There is a simple example in this repository of a `WEKA J48 decision tree` in Scala (file `weka_j48_decision_tree.scala`).
 
